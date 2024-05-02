@@ -1,0 +1,48 @@
+//Calculator Program
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    char op;
+    float num1, num2;
+ 
+    cout << "please enter an arithmatic operation:";
+    cin >> op; 
+    
+    cout << "please enter the first number:";
+    cin >> num1;
+    cout << "please enter the second number:";
+    cin >> num2;
+
+    switch (op)
+    {       
+
+        case '+':
+            cout << "The result is: " << num1 + num2;
+            break;
+         
+        // If the user enters - sign
+        case '-':
+            cout << "The result is: " << num1 - num2;
+            break;
+         
+        // If the user enters * sign
+        case '*':
+            cout << "The result is: " << num1 * num2;
+            break;
+         
+        // If the user enters / sign
+        case '/':
+            cout << "The result is: " << num1 / num2;
+            break;
+         
+
+        // If the operator is other than +, -, * or, / then an error message will be displayed
+        default:
+            cout << "Error! sign for arithmatic operation is not correct";
+            
+    }
+ 
+    return 0;
+}
